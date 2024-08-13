@@ -1,173 +1,704 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+ 
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #eccc6c;
+  width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+.topnav a {
+  float: left;
+  color: #2d4570;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.satu {
+    background-color: #eccc6c;
+    float: center;
+    
+    width: 990px;
+    float: center;
+    
    
-    <head>
-        <link rel="stylesheet" href="css/style.css"> 
-        <title>ozora restaurant</title>
-    </head>
-    
-    <body>
-<div class="wrapper">
-        <div class="top"> 
-            <img src="top.png" >
-    
-        </div>
-        <div class="tulisan-awal">
-        <p class="kochira">
-            3つスペシャルメニューはこちら！
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-bottom: 50px;
+   
+}
+.tulisansatu{
+    font-size: 70px;
+    font-family:A-OTF ハルクラフト Std;
+    color: #2d4570;
+    text-align: center;
+}
+.tulisandua{
+    font-size: 30px;
+    font-family:A-OTF 中ゴシックBBB pro;
+    color: #2d4570;
+    text-align: center;
+}
+.satu img{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+.satu p{
+    line-height: 0,5;
+    text-indent: 30px;
+    line-gap-override: 0,5;
+}
 
-        </p>
-        </div>
- <div id="awal-menu">
-        <img src="gambar makanan.png">
-        <br>
-        <br>
+.garis-vertical {
+    border-left: 1px solid #333;
+    height: 6px;
+}
+.dua{
+  background-color: #eccc6c;
+  float: center;
+    
+    width: 990px;
+    float: center;
+    
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-bottom: 50px;
+    gap: 10px;
+}
+
+.tulisantiga{
+    font-size: 80px;
+    font-family:Hobo Std;
+    color: #2d4570;
+    text-align: center;
+    top: 50%;
+    bottom: 50%;
+ 
+
+
+}
+.tulisanempat{
+  font-size: 20px;
+  font-family:A-OTF 中ゴシックBBB Pro;
+    color: #000000;
+    text-align: top;
+    text-align: justify;
+    left: 50%;
+    right: 50%;
+    padding-left: 90px;
+    padding-right: 90px;
+ 
+ 
+
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides, .mySlides2, .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+
+
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #c6bdbd;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.background-color {
+    background-color: #eccc6c;
+    float: center;
+    
+    width: 990px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-bottom: 50px;
+    margin-top: 0;
+}
+.background-slider{
+    background-color: #ffffff;
+    float: center;
+    
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+.Tentang img {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-60%, -60%);
+}
+.tulisanlima{
+    font-size: 80px;
+    font-family:Hobo Std;
+    color: #2d4570;
+    text-align: center;
+    top: 50%;
+    bottom: 50%;
+ 
+
+
+}
+.background-color {
+    background-color: #eccc6c;
+    float: center;
+    
+    width: 990px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-bottom: 50px;
+    margin-top: 0;
+}
+
+.tulisanenam{
+    font-size: 80px;
+    font-family:Hobo Std;
+    color: #2d4570;
+    text-align: center;
+    top: 50%;
+    bottom: 50%;
+ 
+
+
+}
+
+
+
+.containergambarperi{
+  position: relative;
+  width: 300px;
+  height: 300px;
+ 
+}
+.image{
+  position: absolute;
+  bottom: 90px;
+  right: 90px;
+  width: 500px;
+  height: auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  padding-right: 90px;
+}
+
+.slideshow-container1 {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+.background-color1{
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+  margin-top: 0;
+  background-image: url(backgroundperi.png)
+}
+.tulisantuju{
+  font-size: 20px;
+  font-family:A-OTF 中ゴシックBBB Pro;
+    color: #000000;
+    text-align: top;
+    text-align: justify;
+    left: 50%;
+    right: 50%;
+    padding-left: 90px;
+    padding-right: 90px;
+
+}
+
+.tulisandelapan{
+  font-size: 20px;
+  font-family:A-OTF 中ゴシックBBB Pro;
+    color: #000000;
+    text-align: top;
+    text-align: justify;
+    left: 50%;
+    right: 50%;
+    padding-left: 90px;
+    padding-right: 90px;
+
+}
+
+.tulisankesembilan{
+  font-size: 20px;
+  font-family:A-OTF 中ゴシックBBB Pro;
+    color: #000000;
+    text-align: top;
+    text-align: justify;
+    left: 50%;
+    right: 50%;
+    padding-left: 90px;
+    padding-right: 90px;
+
+}
+
+.image-container9 {
+    display: flex;
+    flex-direction: row; /* Changed to row for horizontal layout */
+    gap: 10px;
+}
+
+.image-container9 img {
+    width: 250px;
+    height: auto;
+  
+}
+.myskill {
+    background-color: #eccc6c;
+    float: center;
+    
+    width: 990px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-bottom: 50px;
+    margin-top: 0;
+    justify-content: center; /* Center images horizontally */
+}
+
+.gambarskill-container {
+  display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center images horizontally */
+    gap: 40px; /* Space between images */
+    padding: 20px;
+    float: center;
+}
+
+.gambarskill-container img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+.judulskill{display: block;
+margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+}
+.judulskill img{
+width: 60%;
+display: block;
+margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;}
+  
+.koki{display: block;
+margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;}
+  
+
+
+</style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">About Me</Menu></a>
+        <a href="#contact">Skill</a>
+        <a href="#about">My Draw</a>
+        <a href="#Design">Design</a>
       </div>
-        <div id="bagan-awal">
-          <div id="button">
-            <div class="box">
-              <a href="#bagan-dua">
-                <img src="tombol1.png">
-              </a>
-            </div>
+     
+          <div class="satu">
+           <img src="kepala si merah.png" width="400px">
+           <p class="tulisansatu">私は日本語文化学科です</p>
+           <p class="tulisandua">I'm Japanese Language and Literature
             <br>
-            <br>
-            <div class="box">
-              <a href="#bagan-satu">
-                <img src="tombol2.png">
-              </a>
-            </div>
-            <div class="box">
-              <a href="#bagan-tiga">
-                <img src="tombol 3.png">
-              </a>
-            </div>
-
-           
-          
-            </div>
-          <div id="bagan-satu">
-            <div id="kare">
-              <div id="bagan-kare">
-                <a href="bagan1.png">
-                  <img src="bagan1.png">
-                </a>
-              </div>
-
-              <div id="keterangan-kare">
-                <p>
-                  エビ・あさり・イカが旨味たっぷりの魚介カレー。<br>
-
-                  ◎大盛り【350g：＋100円(税込)】<br>
-                  ・小盛り【150g：－50円(税込)】もできます。 <br>
-                  
-                  ◎辛さが選べます。
-
-
-                </p>
-
-              </div>
-              <br>
-              <br>
-
-
-              <div id="bagan-dua">
-                <div id="ramen">
-                  <div id="bagan-ramen">
-                    <a href="bagan2.png">
-                      <img src="bagan2.png">
-                    </a>
-                  </div>
-    
-                  <div id="keterangan-ramen">
-                    <p>
-                      日本全国に人気の厚切り牛たんラーメン。<br>
-
-                      ◎大盛り【350g：＋100円(税込)】・<br>
-
-                      小盛り【150g：－50円(税込)】もできます。
-                      
-                      ◎辛さが選べます。
-                      
-    
-    
-                    </p>
-    
-                  </div>
-                  <br>
-                  <br>
-                
-
-                  <div id="bagan-tiga">
-                    <div id="hitsumaburi">
-                      <div id="bagan-hitsumaburi">
-                        <a href="bagan3.png">
-                          <img src="bagan3.png">
-                        </a>
-                      </div>
-        
-                      <div id="keterangan-hitsumaburi">
-                        <p>
-                          強火の遠火で焼き上げる名古屋名物のひつまぶし。
-                          <br>
-                          ◎大盛り【350g：＋100円(税込)】・<br>小盛り【150g：－50円(税込)】<br>
-                          もできます。
-                          ◎辛さが選べます。
-
-
-                          
-        
-        
-                        </p>
-        
-                      </div>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                  
-
-                      <div id="bagan-mayan">
-                        <div id="daon">
-                          <div id="sumpahinidaun">
-                            <a href="daun-daun.png">
-                              <img src="daun-daun.png">
-                            </a>
-                          </div>
-
-<br>
-                      <div id="bagan-empat">
-                        <div id="kupon">
-                          <div id="bagan-kupon">
-                            <a href="kupon.png">
-                              <img src="kupon.png">
-                            </a>
-                          </div>
-                          <br>
-                          <br>
-            <div class="bagian-bawah">
-              <div class="akhir">
-                <div id="akhirbanget">
-                  <a href="bagianbawah.png">
-                    <img src="bagianbawah.png">
-                  </a>
-                </div>
-              </div>
-            </div>
-                         
-    
-
-
-
-            </div>
+            Click here to know about me, and know my information. its my archieve
+           </p>
           </div>
 
+           <div class="garis-vertical"></div>
 
-      
+           <div class="dua">
+              <img src="kepalamerah2.png" width="995px">
+              <h1 class="tulisantiga">About Me</h1>
+             <p class="tulisanempat">Hello! I have a deep passion for various forms of creativity, including drawing, design, singing, and music. These interests fuel my daily inspiration and joy. Writing and reading books are also essential parts of my life, allowing me to explore new ideas and express myself.
+            <br>
 
+              Currently, I’m studying Japanese Language and Literature, where I’m immersing myself in the intricacies of the language and its rich literary traditions. This academic journey complements my creative pursuits and helps me connect my artistic passions with my studies. Excited to see where this blend of creativity and scholarship will take me! </p>
+           </div>
+ 
+           <div class="garis-vertical"></div>
+
+         
+
+
+          </div>
+
+           
+
+ 
+        
+           
+             
+             <div class="myskill">
+              <br>
+              <br>
+               <img class="judulskill" src="judulskill.png">
+               <br>
+               <br>
+               <div class="gambarskill-container">
+              <img src="skil 1.png">
+               <img src="skill 2.png">
+               <img src="skill 3.png">
+              <img src="skill 4.png">
+            </div>
+            <img class="koki" src="judul nya my skill.png">
+            
+              </div>
+
+              <div class="garis-vertical"></div>
+
+
+
+
+
+
+
+   <div class="background-color">
+  <br>
+  <br>
+  <h1 class="tulisanlima">My Artistic Journey</h1>
+<div class="background-slider">
+  
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="autumn girl.jpg" style="width:100%">
+  <div class="text">Autumn girl</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="blue girl.jpg" style="width:100%">
+  <div class="text">blue girl</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="fairy tale.jpg" style="width:100%">
+  <div class="text">Fairy tale</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 3</div>
+    <img src="supermoon.jpg" style="width:100%">
+    <div class="text">Super moon Redraw</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 3</div>
+    <img src="cooking draw.jpg" style="width:100%">
+    <div class="text"> Cooking </div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 3</div>
+    <img src="fishgirl.jpg" style="width:100%">
+    <div class="text"> Cooking </div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 3</div>
+    <img src="hoodieijotosca.jpg" style="width:100%">
+    <div class="text"> Cooking </div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 3</div>
+    <img src="hoodiepink.jpg" style="width:100%">
+    <div class="text"> Cooking </div>
+  </div>
+<a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+<a class="next" onclick="plusSlides(1, 0)">❯</a>
+
+</div>
+
+<br>
+
+</div>
+<p class="tulisankesembilan">I have a deep passion for drawing, especially using IbisPaint. My work primarily focuses on creating simple cartoon illustrations that are brought to life with bright, vibrant colors. I enjoy experimenting with different color palettes and infusing my own unique art style into each piece. Through this medium, I express creativity and develop my artistic voice, continuously evolving my style while staying true to the playful and lively essence of my illustrations. </p>
+
+<div class="image-container9">
+  <img src="kepala1.png" alt="Image 1">
+  <img src="kepala2.png" alt="Image 2">
+  <img src="kepala3.png" alt="Image 3">
+  <img src="kepala4.png" alt="Image 3">
+</div>
+
+</div>
+<div class="garis-vertical"></div>
+
+
+<div class="background-color1">
+  <br>
+  <br>
+  <h1 class="tulisanenam">My Design</h1>
+  <div class="background-slider1">
+
+    <div class="slideshow-container1">
+      <div class="mySlides2">
+        <img src="名称未設定-1-復元.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides2">
+        <img src="名称未設定-2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides2">
+        <img src="名称未設定-3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides2">
+        <img src="名称未設定-4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides2">
+        <img src="名称未設定-5.jpg" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <img src="01-dua.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides2">
+        <img src="02-dua.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides2">
+        <img src="03-SATU.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides2">
+        <img src="04-satu.jpg" style="width:100%">
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+
+    
+   <div class="tulisantuju">
+    This project utilized existing assets from Ozora Publishing Jakarta, specifically from the compilation book of Showa-era products titled Chotto Shiawase during its execution. I combined the design elements mentioned above to create the attached web banner. The application used for this project was Adobe Photoshop.
+   </div>
+   <br>
+   <br>
+   <div class="tulisandelapan">
+    In this project, I received foundational training in design. 
+    <br>The training covered techniques such 
+    <br>as background removal from images,
+    <br> the workings of text hierarchy, 
+    <br>and the effective use of color.
+
+ 
+   </div>
+    
 
 
 
 
 </div>
-    </body>
+<br>
+<br>
+<div class="garis-vertical"></div>
+
+
+
+
+
+
+
+
+
+<script>
+  let slideIndex = [1,1];
+  let slideId = ["mySlides", "mySlides2", "myslides3"]
+  showSlides(1, 0);
+  showSlides(1, 1);
+  showSlides(1, 2);
+  
+  
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+  }
+  
+  function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}    
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex[no]-1].style.display = "block";  
+  }
+  </script>
+
+  
+
+</body>
+</html> 
